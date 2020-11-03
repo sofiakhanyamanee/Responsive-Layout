@@ -1,0 +1,22 @@
+@mixin flexCenter {
+  display: flex;
+  justify-content: center;
+  align-self: center;
+  text-align: center;
+}
+
+%general-paragraphs {
+  color: black;
+  max-width: 460px;
+  font-size: 15px;
+}
+
+%backgroundColor-nav-thumbnails-nature-footer {
+  background-color: #394951;
+  color: white;
+  h2 {
+    color: #ff8673;
+  }
+}
+
+$backgroundColor: #fafafa;

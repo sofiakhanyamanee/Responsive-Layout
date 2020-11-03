@@ -1,0 +1,65 @@
+.navigation {
+  @extend %backgroundColor-nav-thumbnails-nature-footer;
+  padding: 20px 0px;
+  transition: ease-in-out 500ms;
+
+  &__linklist {
+    display: flex;
+    flex-direction: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    list-style-type: none;
+  }
+
+  &__link {
+    text-decoration: none;
+    padding: 0px 10px;
+    margin: 0px auto;
+    color: #eaddd9;
+    font-family: Poppins;
+    font-weight: bold;
+    transition: ease-in-out 700ms;
+
+    &:hover {
+      color: lightcoral;
+      font-size: 19px;
+      border-bottom: 1px solid lightcoral;
+    }
+  }
+
+  .logo {
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+    margin: 10px 0px 25px 0px;
+    color: #ff8673;
+    font-family: "Unica One";
+    font-size: 26px;
+    transition: ease-in-out 900ms;
+
+    &:hover {
+      color: silver;
+      font-size: 35px;
+    }
+  }
+
+  @media (min-width: 650px) {
+    padding: 20px 40px;
+
+    &__linklist {
+      flex-direction: row;
+      justify-content: flex-end;
+      margin-top: -25px;
+    }
+
+    &__link {
+      padding: 0px 20px;
+    }
+
+    .logo {
+      justify-content: flex-start;
+      margin: 0;
+      padding-left: 30px;
+    }
+  }
+}
